@@ -14,14 +14,14 @@ router.post(
   "/create",
   verifyUserToken,
   upload.array("images"),
-  validate(createProductValidationRules),
+  // validate(createProductValidationRules),
   productController.createProductController
 );
 router.get("/", productController.getProductsController);
 router.put(
   "/:productId",
   verifyUserToken,
-  validate(updateProductValidationRules),
+  // validate(updateProductValidationRules),
   upload.array("images"),
   productController.updateProductController
 );

@@ -57,7 +57,6 @@ const createProduct = async (req) => {
 
   // Create new product
   const newProduct = new Product({
-    quantity,
     productName,
     images: cloudinaryImages,
     description,
